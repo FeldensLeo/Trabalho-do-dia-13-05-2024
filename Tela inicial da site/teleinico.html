@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Carros</title>
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<html lang="en">
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #eae8e8dd;
+      }
+      
+      .container {
+        width: 87%;
+        margin: 0 auto;
+      }
+      
+      header {
+        background-color: #333;
+        padding: 20px 0;
+      }
+      
+      h1 {
+        color: #fff;
+        margin: 0;
+        padding: 2px;
+        text-align:left;
+      }
+      
+      nav ul {
+        list-style: none;
+        padding: 2px;
+        margin: 0;
+      }
+      
+      nav ul li {
+        display: inline;
+      }
+      
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 15px;
+      }
+      
+      .search-section {
+        float: none;
+        padding: 1vw;
+        position: absolute;
+        top: 200px;
+        right:41.5vw;
+      }
+      
+      .search-form input {
+        padding: 0.5vw 4.9vw;
+        border: none;
+        position:absolute;
+        right: 0.4vw;
+        border-radius: 10px 0 0 10px;
+        transform: translateY(-50%);
+      }
+      
+      .search-form button {
+        padding: 0.5vw 1vw;
+        background-color: #3f3f3f;
+        border: none;
+        color: #ffffff;
+        position:absolute;
+        left: 3vw;
+        border-radius: 0px 1px 1px 0px;
+        cursor: pointer;
+        transform: translate(-50%,-50%);
+      }
+      
+      .login-section {
+        float: inline-end;
+        transform: translate(-50%,-50%);
+      }
+      
+      .login-section a {
+        color: #fff;
+        text-decoration: none;
+        left: 10vw;
+        
+      }
+      
+      .login-section a.signup {
+        background-color: #616568;
+        padding: 9px 9px;
+        border-radius: 9px;
+      }
+      
+      .car-gallery {
+        background-color: #eae8e8dd;
+        padding: 50px 0;
+      }
+      
+      .car-gallery h2 {
+        text-align: center;
+      }
+      
+      .car-images {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 80px;
+      }
+      
+      .car-images img {
+        width: 250px;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+      }
+        li {
+     position: relative;
+     display: inline-block;
+     }
+
+        li:after {
+     content: "";
+     position: absolute;
+     left:0;
+     top: 100%;
+     width: 0;
+      height: 2px;
+     background-color: rgb(255, 255, 255);
+     transition: width .3s ease-in-out;
+     }
+     li:hover:after {
+        width: 100%;
+     }
+     div.img {
+        text-align: left;
+     }
+     img.hover {
+      background: #d6d6d6;
+     }
+     h4 {
+      text-indent: 5px;
+     }
+    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Carros</title>
+  <link rel="stylesheet" href="tela_de_inicio.css">
+  <style>
+    .car-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .car-images .car {
+      flex: 0 0 30%; /* Ajuste a largura dos itens conforme necessário */
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .car-images img {
+      max-width: 100%;
+      max-height: 100%; /* Adicionando uma altura máxima */
+      object-fit: contain; /* Garante que a imagem seja redimensionada preservando sua proporção */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <h1>ㅤㅤCarros Incríveis</h1>
+        <ul>
+          <li><a href="teleinico.html"><li>Início</li></a></li>
+          <li><a href="carros.novos"><li>Carros Novos</li></a></li>
+          <li><a href="carros.usados"><li>Carros Usados</li></a></li>
+          <li><a href="sobre nos/sobre.html"><li>Sobre Nós</li></a></li>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+          <li><a href="Criação da contalogin/login.html"><i class="fa fa-user" style="font-size:22.5px;color:white"></i></a></li>
+        
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="car-gallery">
+    <h2>Veja Nossos Carros</h2>
+    <div class="container">
+      <div class="search-section">
+        <form action="#" class="search-form">
+          <input type="text" placeholder="Buscar carros...">
+          <button type="submit"><i class="fa fa-search"></i></button> 
+        </form>
+      </div>
+      <div class="car-images">
+        <div class="car">
+          <a href="Tela Lambo Urus/urus.html"><img src="urus.jpeg" alt="Carro 1"></a>
+          Urus
+        </div>
+        <div class="car">
+          <a href="Tela do Civic/civic.html"><img src="civc.jpeg" alt="Carro 2"></a>
+          <p>Civic</p>
+        </div>
+        <div class="car">
+          <a href="Tela Rolls Royce/rr.html"><img src="rr.jpeg" alt="Carro 3"></a>
+          <p>Rolls royce </p>
+        </div>
+        <div class="car">
+          <a href="Tela do camaro/camaro.html"><img src="Camaro-2.jpg" alt="Carro 4"></a>
+          <p>Camaro</p>
+        </div>
+      </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitar Ajuda</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 150px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    .error {
+      color: red;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #eae8e8dd;
+      }
+      
+      .container {
+        width: 87%;
+        margin: 0 auto;
+      }
+      
+      header {
+        background-color: #333;
+        padding: 20px 0;
+      }
+      
+      h1 {
+        color: #fff;
+        margin: 0;
+        padding: 2px;
+        text-align:left;
+      }
+      
+      nav ul {
+        list-style: none;
+        padding: 2px;
+        margin: 0;
+      }
+      
+      nav ul li {
+        display: inline;
+      }
+      
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 15px;
+      }
+      
+      .search-section {
+        float: none;
+        padding: 1vw;
+        position: absolute;
+        top: 200px;
+        right:41.5vw;
+      }
+      
+      .search-form input {
+        padding: 0.5vw 4.9vw;
+        border: none;
+        position:absolute;
+        right: 0.4vw;
+        border-radius: 10px 0 0 10px;
+        transform: translateY(-50%);
+      }
+      
+      .search-form button {
+        padding: 0.5vw 1vw;
+        background-color: #3f3f3f;
+        border: none;
+        color: #ffffff;
+        position:absolute;
+        left: 3vw;
+        border-radius: 0px 1px 1px 0px;
+        cursor: pointer;
+        transform: translate(-50%,-50%);
+      }
+      
+      .login-section {
+        float: inline-end;
+        transform: translate(-50%,-50%);
+      }
+      
+      .login-section a {
+        color: #fff;
+        text-decoration: none;
+        left: 10vw;
+        
+      }
+      
+      .login-section a.signup {
+        background-color: #616568;
+        padding: 9px 9px;
+        border-radius: 9px;
+      }
+      
+      .car-gallery {
+        background-color: #eae8e8dd;
+        padding: 50px 0;
+      }
+      
+      .car-gallery h2 {
+        text-align: center;
+      }
+      
+      .car-images {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 80px;
+      }
+      
+      .car-images img {
+        width: 250px;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+      }
+        li {
+     position: relative;
+     display: inline-block;
+     }
+
+        li:after {
+     content: "";
+     position: absolute;
+     left:0;
+     top: 100%;
+     width: 0;
+      height: 2px;
+     background-color: rgb(255, 255, 255);
+     transition: width .3s ease-in-out;
+     }
+     li:hover:after {
+        width: 100%;
+     }
+     div.img {
+        text-align: left;
+     }
+     img.hover {
+      background: #d6d6d6;
+     }
+     h4 {
+      text-indent: 5px;
+     }
+    
+  </style>
+</head>
+<header>
+    <div class="container">
+      <nav>
+        <h1>ㅤㅤCarros Incríveis</h1>
+        <ul>
+          <li><a href="index.html"><li>Início</li></a></li>
+          <li><a href="carros.novos"><li>Carros Novos</li></a></li>
+          <li><a href="carros.usados"><li>Carros Usados</li></a></li>
+          <li><a href="sobre nos/sobre.html"><li>Ajude Nós</li></a></li>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+          <li><a href="Criação da contalogin/login.html"><i class="fa fa-user" style="font-size:22.5px;color:white"></i></a></li>
+        
+        </ul>
+      </nav>
+    </div>
+  </header>
+<body>
+
+
+<div class="container">
+  <h2>Solicitar Ajuda</h2>
+  <form action="/enviar_solicitacao" method="post" onsubmit="return validarForm()">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    <span id="nomeErro" class="error"></span>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <span id="emailErro" class="error"></span>
+
+    <label for="assunto">Assunto:</label>
+    <input type="text" id="assunto" name="assunto" required>
+    <span id="assuntoErro" class="error"></span>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" required></textarea>
+    <span id="mensagemErro" class="error"></span>
+
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+
+<script>
+  function validarForm() {
+    var nome = document.getElementById("nome").value;
+    var email = document.getElementById("email").value;
+    var assunto = document.getElementById("assunto").value;
+    var mensagem = document.getElementById("mensagem").value;
+    var isValid = true;
+
+    if (nome === "") {
+      document.getElementById("nomeErro").innerHTML = "Por favor, insira seu nome.";
+      isValid = false;
+    } else {
+      document.getElementById("nomeErro").innerHTML = "";
+    }
+
+    if (email === "") {
+      document.getElementById("emailErro").innerHTML = "Por favor, insira seu email.";
+      isValid = false;
+    } else {
+      document.getElementById("emailErro").innerHTML = "";
+    }
+
+    if (assunto === "") {
+      document.getElementById("assuntoErro").innerHTML = "Por favor, insira o assunto.";
+      isValid = false;
+    } else {
+      document.getElementById("assuntoErro").innerHTML = "";
+    }
+
+    if (mensagem === "") {
+      document.getElementById("mensagemErro").innerHTML = "Por favor, insira sua mensagem.";
+      isValid = false;
+    } else {
+      document.getElementById("mensagemErro").innerHTML = "";
+    }
+
+    return isValid;
+  }
+</script>
+
+</body>
+</html>
